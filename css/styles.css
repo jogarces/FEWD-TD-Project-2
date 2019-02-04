@@ -1,0 +1,181 @@
+/* Adjustments & Corrections */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+main {
+    display: block;
+}
+
+/* Layout */
+
+.wrapper {
+    margin: auto;
+}
+
+#main-header,
+footer,
+.profile {
+    padding: .5em 1em;
+}
+
+.section {
+    display: block;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 0;
+    vertical-align: top;
+}
+
+#Contact {
+    padding: 1em;
+}
+
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+
+h2,
+.name {
+    text-align: center;
+}
+
+span .name {
+    display: inline-block;
+}
+
+#footer-name {
+    display: inline-block;
+    padding: 1em;
+}
+
+/* Header & Navigation */
+.nav-wrapper {
+    text-align: center;
+}
+
+.nav-wrapper ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-wrapper li {
+    padding: 1em;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+/* Styling */
+
+.nav-wrapper a:link {
+    color: black;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Media Queries & Responsive*/
+
+@media (min-width: 1024px) {
+    #Portfolio figure {
+        width: 33%;
+    }
+
+    #main-header .name {
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    .nav-wrapper,
+    nav li {
+        display: inline-block;
+    }
+
+    .nav-wrapper {
+        float: right;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #Portfolio figure {
+        width: 49%;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    .name {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+
+    #Portfolio figure {
+        display: inline-block;
+    }
+
+    #profile-img {
+        float: right;
+        width: 50%;
+    }
+
+    #profile-about {
+        float: left;
+        vertical-align: top;
+        width: 50%;
+    }
+
+    #footer-nav {
+        display: inline-block;
+        float: right;
+    }
+
+    #backToTop {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    #footer-nav .nav-wrapper {
+        display: none;
+    }
+
+    #backToTop {
+        display: inline-block;
+        float: right;
+    }
+}
