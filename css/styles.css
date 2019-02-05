@@ -112,9 +112,6 @@ a:visited {
 /* Media Queries & Responsive*/
 
 @media (min-width: 1024px) {
-    #Portfolio figure {
-        width: 33.3%;
-    }
 
     #main-header .name {
         display: block;
@@ -126,12 +123,12 @@ a:visited {
         display: flex;
     }
 
-    nav li {
-        display: inline-block;
-    }
-
     .nav-wrapper {
         display: block;
+    }
+
+    #Portfolio figure {
+        width: 33.3%;
     }
 }
 
@@ -141,18 +138,15 @@ a:visited {
         width: 50%;
     }
 
-    nav li {
-        display: inline-block;
-    }
-
-    .name {
-        display: block;
-    }
 }
 
 @media (min-width: 768px) {
 
-    #Portfolio figure {
+    .name {
+        display: block;
+    }
+
+    nav li {
         display: inline-block;
     }
 
@@ -167,6 +161,10 @@ a:visited {
         width: 50%;
     }
 
+    #Portfolio figure {
+        display: inline-block;
+    }
+
     #footer-nav {
         display: inline-block;
         float: right;
@@ -175,11 +173,14 @@ a:visited {
     #backToTop {
         display: none;
     }
-
 }
 
 
 @media (max-width: 767px) {
+
+    #profile-img {
+        max-width: 100%;
+    }
 
     #footer-nav {
         display: inline;
@@ -192,9 +193,5 @@ a:visited {
     #backToTop {
         display: inline-block;
         float: right;
-    }
-
-    #profile-img {
-        max-width: 100%;
     }
 }
