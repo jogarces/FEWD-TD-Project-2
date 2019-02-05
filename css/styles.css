@@ -34,6 +34,7 @@ footer,
 
 .container {
     width: 100%;
+    font-size: 0;
 }
 
 figure {
@@ -42,6 +43,7 @@ figure {
     padding-right: 1em;
     border: 0;
     vertical-align: top;
+    font-size: initial;
 }
 
 #Contact {
@@ -58,10 +60,6 @@ figure {
 h2,
 .name {
     text-align: center;
-}
-
-span .name {
-    display: inline-block;
 }
 
 #footer-name {
@@ -83,10 +81,18 @@ span .name {
     padding: 1em;
 }
 
+#backToTop {
+    padding: 1em;
+}
+
 a,
 a:link,
 a:visited {
     text-decoration: none;
+}
+
+#profile-img {
+    max-width: 40%;
 }
 
 /* Styling */
@@ -107,12 +113,17 @@ a:visited {
 
 @media (min-width: 1024px) {
     #Portfolio figure {
-        width: 33%;
+        width: 33.3%;
     }
 
     #main-header .name {
-        display: inline-block;
+        display: block;
+        margin-right: auto;
         padding: 1rem;
+    }
+
+    nav ul {
+        display: flex;
     }
 
     .nav-wrapper,
@@ -121,14 +132,14 @@ a:visited {
     }
 
     .nav-wrapper {
-        float: right;
+        display: block;
     }
 }
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
     #Portfolio figure {
-        width: 49%;
+        width: 50%;
     }
 
     nav li {
@@ -170,6 +181,11 @@ a:visited {
 
 
 @media (max-width: 767px) {
+
+    #footer-nav {
+        display: inline;
+    }
+
     #footer-nav .nav-wrapper {
         display: none;
     }
@@ -177,5 +193,9 @@ a:visited {
     #backToTop {
         display: inline-block;
         float: right;
+    }
+
+    #profile-img {
+        max-width: 100%;
     }
 }
