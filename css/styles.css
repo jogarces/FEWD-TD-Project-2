@@ -16,10 +16,20 @@ main {
     display: block;
 }
 
+hr {
+    border: none;
+    border-top: 1px #CCCCCC solid;
+    height: 1px;
+}
+
 /* Styling */
 
 .wrapper {
     margin: auto;
+}
+
+header {
+    margin-top: 3rem;
 }
 
 #main-header,
@@ -98,7 +108,7 @@ h3 {
     text-align: center;
 }
 
-.nav-wrapper li,
+footer li,
 #Skills li {
     padding: 1rem;
 }
@@ -210,6 +220,8 @@ footer a:visited {
     font-family: 'Abel', sans-serif;
     color: #8A6161;
     font-size: 1.5rem;
+    padding: 1rem;
+    display: block;
 }
 
 
@@ -250,8 +262,14 @@ footer {
     }
 
     #Contact p {
-        padding-left: 15rem;
-        padding-right: 15rem;
+        font-size: 1.2rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    footer {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
     }
 
     #footer-nav {
@@ -261,6 +279,10 @@ footer {
 
     #footer-nav .nav-wrapper {
         display: block;
+    }
+
+    footer a {
+        font-size: 1.2rem;
     }
 
     #backToTop {
@@ -296,8 +318,13 @@ footer {
     }
 
     #Contact p {
+        font-size: 1.2rem;
         padding-left: 15rem;
         padding-right: 15rem;
+    }
+
+    footer a {
+        font-size: 1.2rem;
     }
 
 }
