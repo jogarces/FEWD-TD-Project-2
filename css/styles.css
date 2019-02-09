@@ -1,5 +1,7 @@
-/* Adjustments & Corrections */
+/*Imports*/
+@import url('https://fonts.googleapis.com/css?family=Abel|Jacques+Francois|Josefin+Sans|Megrim');
 
+/* Adjustments & Corrections */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +18,7 @@ main {
     display: block;
 }
 
-/* Layout */
+/* Styling */
 
 .wrapper {
     margin: auto;
@@ -24,8 +26,10 @@ main {
 
 #main-header,
 footer,
-.profile {
-    padding: .5em 1em;
+.profile,
+#Contact {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .section {
@@ -33,7 +37,7 @@ footer,
     text-align: center;
 }
 
-.container {
+.portfolio-container {
     width: 100%;
     font-size: 0;
 }
@@ -47,10 +51,6 @@ figure {
     font-size: initial;
 }
 
-#Contact {
-    padding: 1em;
-}
-
 .image {
     width: 100%;
     height: auto;
@@ -61,6 +61,23 @@ h2,
     text-align: center;
 }
 
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #8A6161;
+}
+
+.name {
+    font-family: 'Megrim', cursive;
+    font-size: 36px;
+}
+
+p,
+h3 {
+    font-family: 'Jacques Francois', serif;
+    color: #5B5B5B;
+}
+
 #footer-name {
     display: inline-block;
     padding: 1em;
@@ -68,17 +85,33 @@ h2,
 
 /* Header & Navigation */
 
-.nav-wrapper {
+.nav-wrapper,
+#Contact {
     text-align: center;
 }
 
-.nav-wrapper ul {
+.nav-wrapper ul,
+#Skills ul {
     padding: 0;
     list-style-type: none;
 }
 
-.nav-wrapper li {
-    padding: 1em;
+.skill-container {
+    text-align: center;
+}
+
+.nav-wrapper li,
+#Skills li {
+    padding: 1rem;
+}
+
+#Skills li {
+    background: #fff;
+    text-align: center;
+    font-family: 'Jacques Francois', serif;
+    color: #5B5B5B;
+    border-radius: 10px;
+    margin: 1rem;
 }
 
 #backToTop {
@@ -89,14 +122,53 @@ a,
 a:link,
 a:visited {
     text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #8A6161;
 }
 
 #profile-img {
     max-width: 100%;
 }
 
+#profile-about {
+    padding-top: 1rem;
+}
+
 .nav-wrapper a:link {
-    color: black;
+    color: #000;
+}
+
+figure {
+    padding: 1rem;
+}
+
+figure img {
+    border-radius: 10px;
+}
+
+figure h3 {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#About,
+section:nth-child(even) {
+    background: #FFF;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+section:nth-child(odd) {
+    background: #FFECEC;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+section h2 {
+    padding-bottom: 2rem;
 }
 
 .clearfix::before,
@@ -104,6 +176,11 @@ a:visited {
     content: "";
     display: table;
     clear: both;
+}
+
+.contact-info {
+    padding-left: 1rem;
+    font-weight: 600;
 }
 
 #footer-nav {
@@ -114,9 +191,32 @@ a:visited {
     display: none;
 }
 
+footer a,
+footer a:visited {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #8A6161;
+}
+
 #backToTop {
     display: inline-block;
     float: right;
+}
+
+#main-header li:not(.name) {
+    background: #FFECEC;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+#main-header li:not(.name) a {
+    font-family: 'Abel', sans-serif;
+    color: #8A6161;
+    font-size: 1.5rem;
+}
+
+
+footer {
+    background: #FFECEC;
 }
 
 /* Media Queries & Responsive*/
@@ -139,11 +239,21 @@ a:visited {
         float: left;
         vertical-align: top;
         width: 50%;
+        font-size: 1.2rem;
+    }
+
+    .skill-list {
+        display: inline-block;
     }
 
     #Portfolio figure {
         display: inline-block;
         width: 50%;
+    }
+
+    #Contact p {
+        padding-left: 15rem;
+        padding-right: 15rem;
     }
 
     #footer-nav {
@@ -175,7 +285,21 @@ a:visited {
         display: block;
     }
 
+    #profile-about {
+        font-size: 1.5rem;
+    }
+
     #Portfolio figure {
         width: 33.3%;
     }
+
+    figure p {
+        font-size: 1.2rem;
+    }
+
+    #Contact p {
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
 }
